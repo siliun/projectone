@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: "projectone"
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    #database-platform: org.hibernate.spatial.dialect.postgis.PostgisPG9Dialect
+    #database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/projectone
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jackson:
+    deserialization: 
+      fail-on-unknown-properties: false
+
+  
+    
+    
+# profiles 값 할당 전
+server:
+    port: 1234
+
+
